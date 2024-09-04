@@ -18,7 +18,7 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col">
         <Header />
         <Providers>
-          <main className="overflow-hidden relative flex flex-col flex-grow px-[15px]">
+          <main className="overflow-hidden relative flex flex-col flex-grow items-center justify-center px-[15px]">
             {children}
           </main>
         </Providers>

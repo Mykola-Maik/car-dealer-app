@@ -1,3 +1,5 @@
+import dotenv from "dotenv";
+dotenv.config();
 import {
   HttpServiceInterface,
   RequestConfig,
@@ -7,7 +9,7 @@ import {
 import axios, { type AxiosInstance } from "axios";
 
 const axiosInstance: AxiosInstance = axios.create({
-  baseURL: "http://localhost:7777/api",
+  baseURL: process.env.NEXT_PUBLIC_BASE_URL,
 });
 
 export class HttpService implements HttpServiceInterface {
